@@ -5,6 +5,7 @@ export interface Project {
   url: string;
   images: string[];
   icon: string;
+  tags?: string[];
 }
 
 export const projects: Project[] = [
@@ -22,6 +23,7 @@ export const projects: Project[] = [
       '/projects/v2ex-plus/4.png',
       '/projects/v2ex-plus/5.png',
     ],
+    tags: ['React Native', 'Typescript', 'Redux-toolkit', 'Cheerio'],
   },
   {
     name: 'JiZhu Assistant',
@@ -36,5 +38,6 @@ export const projects: Project[] = [
       '/projects/jizhu-assistant/4.png',
       '/projects/jizhu-assistant/5.png',
     ],
+    tags: ['Typescript', 'Taro', 'Redux'],
   },
 ];

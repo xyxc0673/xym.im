@@ -5,7 +5,14 @@ import { vstack, hstack } from '@/styled-system/patterns';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const ProjectCard = ({ name, description, url, images, icon }: Project) => {
+const ProjectCard = ({
+  name,
+  description,
+  url,
+  images,
+  icon,
+  tags,
+}: Project) => {
   return (
     <div
       className={vstack({
@@ -49,6 +56,30 @@ const ProjectCard = ({ name, description, url, images, icon }: Project) => {
           />
         ))}
       </div>
+      {tags && (
+        <div
+          className={hstack({
+            flexWrap: 'wrap',
+          })}
+        >
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className={css({
+                fontSize: 'sm',
+                fontWeight: 'semibold',
+                color: 'slate.600',
+                bg: 'zinc.100',
+                px: '2',
+                py: '1',
+                rounded: 'md',
+              })}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
       <div className={hstack()}>
         <Link
           href={`https://github.com/${url}`}
