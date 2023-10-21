@@ -35,7 +35,7 @@ const ProjectCard = ({ name, description, url, images, icon }: Project) => {
         </h1>
       </div>
       <p>{description}</p>
-      <div className={hstack({ gap: '8' })}>
+      <div className={hstack({ gap: '8', overflowX: 'scroll' })}>
         {images.map((image) => (
           <Image
             key={image}
@@ -49,24 +49,27 @@ const ProjectCard = ({ name, description, url, images, icon }: Project) => {
           />
         ))}
       </div>
-      <Link
-        href={url}
-        className={hstack({
-          _hover: {
-            textDecoration: 'underline',
-          },
-        })}
-      >
-        <GrommetIconsGithub width={24} height={24} />
-        <span
-          className={css({
-            fontSize: 'md',
-            fontWeight: 'semibold',
+      <div className={hstack()}>
+        <Link
+          href={`https://github.com/${url}`}
+          className={hstack({
+            gap: '1',
+            _hover: {
+              textDecoration: 'underline',
+            },
           })}
         >
-          {url}
-        </span>
-      </Link>
+          <GrommetIconsGithub width={24} height={24} />
+          <span
+            className={css({
+              fontSize: 'md',
+              fontWeight: 'semibold',
+            })}
+          >
+            {url}
+          </span>
+        </Link>
+      </div>
     </div>
   );
 };
