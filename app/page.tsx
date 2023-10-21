@@ -1,5 +1,6 @@
 import { css } from '@/styled-system/css';
 import { vstack } from '@/styled-system/patterns';
+import Footer from './footer';
 import ProjectList from './ProjectList';
 
 const Header = ({
@@ -36,6 +37,7 @@ export default function Home() {
       <Header id='who'>Who</Header>
       <Header id='projects'>Projects</Header>
       <ProjectList />
+      <Footer />
     </main>
   );
 }
