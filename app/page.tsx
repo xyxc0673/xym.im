@@ -2,6 +2,7 @@ import { css } from '@/styled-system/css';
 import { vstack } from '@/styled-system/patterns';
 import Footer from './footer';
 import ProjectList from './ProjectList';
+import Profile from './Profile';
 
 const Header = ({
   id,
@@ -17,7 +18,7 @@ const Header = ({
         fontSize: '4xl',
         fontWeight: 'bold',
         color: 'slate.900',
-        p: '6',
+        py: '6',
       })}
       href={`#${id}`}
     >
@@ -34,10 +35,19 @@ export default function Home() {
         minH: '100vh',
       })}
     >
-      <Header id='who'>Who</Header>
-      <Header id='projects'>Projects</Header>
-      <ProjectList />
-      <Footer />
+      <div
+        className={vstack({
+          w: '70%',
+          alignItems: 'start',
+          px: '16',
+        })}
+      >
+        <Header id='who'>Who</Header>
+        <Profile />
+        <Header id='projects'>Projects</Header>
+        <ProjectList />
+        <Footer />
+      </div>
     </main>
   );
 }

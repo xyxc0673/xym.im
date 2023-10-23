@@ -12,7 +12,14 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        typing: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+    },
   },
 
   // The output directory for your css system
