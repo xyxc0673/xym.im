@@ -67,7 +67,7 @@ const Footer = () => {
   return (
     <footer
       className={css({
-        p: '8',
+        py: '8',
       })}
     >
       <div
