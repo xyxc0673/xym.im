@@ -7,9 +7,9 @@ const ProjectList = () => {
     <div
       className={grid({
         gap: '8',
-        columns: 2,
-        md: {
-          columns: 1,
+        columns: {
+          base: 1,
+          '2xl': 2,
         },
       })}
     >
