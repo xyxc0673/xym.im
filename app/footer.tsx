@@ -1,6 +1,6 @@
-import { GrommetIconsGithub } from '@/assets';
-import { css } from '@/styled-system/css';
-import { hstack, stack, vstack } from '@/styled-system/patterns';
+import { GrommetIconsGithub } from '@assets';
+import { css } from '@styled-system/css';
+import { hstack, stack, vstack } from '@styled-system/patterns';
 import Link from 'next/link';
 
 const CopyRight = () => {

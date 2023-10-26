@@ -1,6 +1,6 @@
-import { projects } from '@/config/projects';
+import { projects } from '@config/projects';
 import ProjectCard from './ProjectCard';
-import { grid, vstack } from '@/styled-system/patterns';
+import { grid, vstack } from '@styled-system/patterns';
 
 const ProjectList = () => {
   return (

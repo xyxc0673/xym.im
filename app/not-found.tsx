@@ -1,5 +1,5 @@
-import { css } from '@/styled-system/css';
-import { stack, vstack } from '@/styled-system/patterns';
+import { css } from '@styled-system/css';
+import { stack, vstack } from '@styled-system/patterns';
 import Link from 'next/link';
 
 const NotFound = () => {

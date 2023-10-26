@@ -1,7 +1,7 @@
-import { GrommetIconsGithub } from '@/assets';
-import { Project } from '@/config/projects';
-import { css } from '@/styled-system/css';
-import { vstack, hstack } from '@/styled-system/patterns';
+import { GrommetIconsGithub } from '@assets';
+import { Project } from '@config/projects';
+import { css } from '@styled-system/css';
+import { vstack, hstack } from '@styled-system/patterns';
 import Image from 'next/image';
 import Link from 'next/link';
 

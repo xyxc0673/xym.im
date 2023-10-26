@@ -1,6 +1,6 @@
-import { skills } from '@/config/skills';
-import { css, cx } from '@/styled-system/css';
-import { vstack, hstack } from '@/styled-system/patterns';
+import { skills } from '@config/skills';
+import { css, cx } from '@styled-system/css';
+import { vstack, hstack } from '@styled-system/patterns';
 import Image from 'next/image';
 
 const Profile = () => {

@@ -3,7 +3,7 @@ import {
   SkillIconsReactDark,
   SkillIconsSwift,
   SkillIconsTypescript,
-} from '@/assets';
+} from '@assets';
 
 export const skills = [
   {
