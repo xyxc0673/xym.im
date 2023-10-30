@@ -1,4 +1,7 @@
+'use client';
+
 import { GrommetIconsGithub } from '@assets';
+import { PreviewImage } from '@components/ui/PreviewImage';
 import { Project } from '@config/projects';
 import { css } from '@styled-system/css';
 import { vstack, hstack } from '@styled-system/patterns';
@@ -43,8 +46,9 @@ const ProjectCard = ({
       </div>
       <p>{description}</p>
       <div className={hstack({ gap: '8', overflowX: 'scroll' })}>
-        {images.map((image) => (
-          <Image
+        {images.map((image, index) => (
+          <PreviewImage
+            id={`${name}_${index}`}
             key={image}
             src={image}
             alt={name}
