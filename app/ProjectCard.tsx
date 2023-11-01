@@ -45,7 +45,7 @@ const ProjectCard = ({
         </h1>
       </div>
       <p>{description}</p>
-      <div className={hstack({ gap: '8', overflowX: 'scroll' })}>
+      <div className={hstack({ gap: '8', overflowX: 'auto' })}>
         {images.map((image, index) => (
           <PreviewImage
             id={`${name}_${index}`}
