@@ -1,0 +1,20 @@
+{
+  "Root": {
+    "Metadata": {
+      "Title": "星游梦 XYM.IM"
+    }
+  },
+  "Home": {
+    "Profile": {
+      "Title": "关于",
+      "Developer": "<开发者 />",
+      "Hello": "<p>你好 👋 我是 <gradient>XYXC</gradient>, 一名来自深圳的开发者.</p><p>我喜欢创造，并且计划成为一名独立开发者。</p>",
+      "Description": "",
+      "Skills": "喜欢使用的技术："
+    },
+    "Projects": "开源项目"
+  },
+  "Footer": {
+    "OpenSource": "开源项目"
+  }
+}

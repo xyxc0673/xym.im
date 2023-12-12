@@ -1,9 +1,12 @@
 import { skills } from '@config/skills';
 import { css, cx } from '@styled-system/css';
 import { vstack, hstack } from '@styled-system/patterns';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const Profile = () => {
+  const t = useTranslations('Home.Profile');
+
   return (
     <div
       className={vstack({
@@ -52,25 +55,11 @@ const Profile = () => {
             },
           })}
         >
-          {`<Developer/>`}
+          {t('Developer')}
         </div>
       </div>
-      <p>
-        {`Hey there 👋 I'm `}
-        <span
-          className={css({
-            backgroundImage: 'linear-gradient(to right, #e68765, #f0b7a3)',
-            backgroundClip: 'text',
-            color: 'transparent',
-            fontWeight: 'bold',
-          })}
-        >
-          XYXC
-        </span>
-        , a front-end developer from China.
-      </p>
-      <p>I love creating useful stuff and plan to be a full stack.</p>
-      <p>What I love to use:</p>
+      <p>{t.rich('Hello')}</p>
+      <p>{t('Skills')}</p>
       <div className={hstack()}>
         {skills.map(
           (skill) =>

@@ -1,0 +1,20 @@
+{
+  "Root": {
+    "Metadata": {
+      "Title": "XYM.IM"
+    }
+  },
+  "Home": {
+    "Profile": {
+      "Title": "Profile",
+      "Developer": "<Developer />",
+      "Hello": "<p>Hey there 👋 I'm <gradient>XYXC</gradient>, a front-end developer from China.</p><p>I love creating useful stuff and plan to be a full stack.</p>",
+      "Description": "",
+      "Skills": "What I love to use:"
+    },
+    "Projects": "Projects"
+  },
+  "Footer": {
+    "OpenSource": "Open Source In"
+  }
+}

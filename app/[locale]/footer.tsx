@@ -1,6 +1,7 @@
 import { GrommetIconsGithub } from '@assets';
 import { css } from '@styled-system/css';
 import { hstack, stack, vstack } from '@styled-system/patterns';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const CopyRight = () => {
@@ -44,9 +45,11 @@ const CopyRight = () => {
 };
 
 const OpenSource = () => {
+  const t = useTranslations('Footer');
+
   return (
     <div className={hstack({ gap: '2' })}>
-      <span>Open Source in</span>
+      <span>{t('OpenSource')}</span>
       <Link
         className={hstack({
           _hover: {
